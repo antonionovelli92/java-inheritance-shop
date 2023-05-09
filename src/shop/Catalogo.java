@@ -81,7 +81,7 @@ public class Catalogo {
       
 
             if (index == catalogo.length) {
-                System.out.println("Catalogo pieno.");
+                System.out.println("Catalogo pieno, caro mio magnifico utente.");
                 break;
             }
     		System.out.println("\n------------------------------------\n");
