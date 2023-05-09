@@ -1,7 +1,9 @@
 package shop;
+
 import java.util.Scanner;
 
 public class Catalogo {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Prodotto[] catalogo = new Prodotto[100];
@@ -76,18 +78,19 @@ public class Catalogo {
                     System.out.println("Scelta non valida.");
                     break;
             }
+      
 
             if (index == catalogo.length) {
                 System.out.println("Catalogo pieno.");
                 break;
             }
-            scanner.close();
-           
+    		System.out.println("\n------------------------------------\n");
+         // Stampo il catalogo scelto dall'utente
+            for (int i = 0; i < index; i++) {
+                System.out.println(catalogo[i]);
+            }
+    		System.out.println("\n------------------------------------\n");
+            
         }
-    }}
-
-//            System.out.print("Vuoi inserire
-
-
-//            System.out.print("Vuoi inserire un altro prodotto? (S/N): ");
-//            String
+        scanner.close();
+        }}
